@@ -9,13 +9,20 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
+  NavLink
+/*  UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem
+  */
+} from 'reactstrap';
 
+const styles = {
+  logo: {
+    width:'30%'
+  },
 
+};
 
 
 class Header extends Component{
@@ -36,15 +43,15 @@ class Header extends Component{
         return(
           <div>
 
-              <Navbar style={{ backgroundColor: 'white' }} light expand="md">
-              <NavbarBrand href="/">slime대학</NavbarBrand>
+              <Navbar style={styles.region} light expand="md">
+              <NavbarBrand href="/" style={styles.logo}>slime대학</NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
 
 
 
               <Collapse isOpen={this.state.isOpen} navbar>
-              <div class="input-group col-6">
-                  <input type="text" class="form-control input-lg" placeholder="#관심어 또는 검색어" />
+              <div className="input-group col-6">
+                  <input type="text" className="form-control input-lg" placeholder="#관심어 또는 검색어" />
                   <Button>검색</Button>
               </div>
                 <Nav className="ml-auto" navbar>
