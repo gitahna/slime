@@ -12,8 +12,7 @@ class Main extends Component{
           <Container>
                <Row>
                  <Col><AlarmCard/></Col>
-                 <Col><AlarmCard/></Col>
-                 <Col><AlarmCard/></Col>
+                 
                </Row>
            </Container>
         );

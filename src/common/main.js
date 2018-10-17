@@ -7,14 +7,15 @@ import Card from '../component/Card';
 
 const styles = {
   maincontainer: {
-    
+
   },
   center: {
     textAlign: 'center'
   },
   rightNav: {
   },
-  verticalLine: {
+  row: {
+        paddingTop: '20px'
   },
 };
 
@@ -22,14 +23,28 @@ const styles = {
 class Main extends Component{
     render(){
         return(
-          <Container  style={styles.maincontainer}>
-               <Row>
-                 <Col><Card/></Col>
-                 <Col><Card/></Col>
-                 <Col><Card/></Col>
+        <div>
+          <Container  >
+          <Row style={styles.row}>
+            <Col><Card/></Col>
+            <Col><Card/></Col>
+            <Col><Card/></Col>
+          </Row>
+          <Row style={styles.row}>
+            <Col><Card/></Col>
+            <Col><Card/></Col>
+            <Col><Card/></Col>
+          </Row>
+          <Row style={styles.row}>
+            <Col><Card/></Col>
+            <Col><Card/></Col>
+            <Col><Card/></Col>
+          </Row>
 
-               </Row>
+
            </Container>
+
+        </div>
         );
     }
 
